@@ -55,6 +55,10 @@ CREATE TABLE users(
 
 Give recursive permission to webserver user to write log in app/tmp folder.
 
+## Preview
+
+![Image](https://image.ibb.co/k6Y1mv/Screenshot_from_2017_09_04_17_27_21.png)
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://github.com/Shakir-Khan/login-with-instagram/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.

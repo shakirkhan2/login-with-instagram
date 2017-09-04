@@ -1,5 +1,5 @@
 # Login With Instagram
-Login with Instagram and categorize your images.
+Login with Instagram and categorize your images in several categories ex: smile, sad, temple, friendship, photography etc.
 
 
 ### Prerequisites

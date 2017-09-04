@@ -4,14 +4,12 @@ Login with Instagram and categorize your images in several categories ex: smile,
 
 ### Prerequisites
 
-PHP 5.3 or higher
-cURL
+PHP 5.3 or higher__
+cURL__
 Registered Instagram App
 
 
 ## Getting Started
-
-Clone this repository git@github.com:Shakir-Khan/login-with-instagram.git
 
 To use the Instagram API you have to register yourself as a developer at the [Instagram Developer Platform](http://instagr.am/developer/register/) and create an application. You will receive your `client_id` and `client_secret`..
 
@@ -42,7 +40,7 @@ Change config files according to your credentials. 1. [database](https://github.
 Create users table to store user log
 
 ```
-CREATE TABLE test.users(
+CREATE TABLE users(
   id INT PRIMARY KEY AUTO_INCREMENT,
   username VARCHAR(70), 
   name VARCHAR(100),
@@ -59,7 +57,7 @@ Give recursive permission to webserver user to write log in app/tmp folder.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/Shakir-Khan/login-with-instagram/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/Shakir-Khan/login-with-instagram/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
 
 
 ## Authors

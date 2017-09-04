@@ -1,0 +1,15 @@
+app/vendor
+app/Config/database.php
+app/Config/google_credentials.json
+app/Config/instagram_credentials.json
+app/tmp
+
+# System generated files #
+##########################
+composer.lock
+composer.phar
+
+# Application Plugins #
+#######################
+plugins
+vendors

@@ -34,7 +34,7 @@ Install depedencies
 php composer.phar install
 ```
 
-Change config files according to your credentials. 1. [database](https://github.com/Shakir-Khan/login-with-instagram/blob/master/app/Config/database.php) 2. [google](https://github.com/Shakir-Khan/login-with-instagram/blob/master/app/Config/google_credentials.json) 3. [instagram](https://github.com/Shakir-Khan/login-with-instagram/blob/master/app/Config/instagram_credentials.json)
+Change config files according to your credentials. 1. [database](https://github.com/Shakir-Khan/login-with-instagram/blob/develop/app/Config/database.php.default) 2. [google](https://github.com/Shakir-Khan/login-with-instagram/blob/develop/app/Config/google_credentials.json.default) 3. [instagram](https://github.com/Shakir-Khan/login-with-instagram/blob/develop/app/Config/instagram_credentials.json.default)
 
 
 Create users table to store user log

@@ -1,0 +1,120 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  color: #444A59;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+button, div, span, label, input {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  font-family: 'Roboto', arial, sans-serif;
+}
+input{
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  -o-user-select: auto;
+  user-select: auto;
+}
+input[type=submit] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance:none;
+  -o-appearance: none;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: #555b68;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+input:-moz-autofill {
+  -moz-text-fill-color: #555B68;
+  -moz-box-shadow: 0 0 0px 1000px white inset;
+}
+input:focus {
+  outline: none;
+}
+* {
+  box-sizing: border-box;
+}
+::-webkit-scrollbar { 
+  display: none; 
+}
+html {
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+@media screen and (max-device-width: 240px) {
+  .body {
+    font-size: 12px;
+  }
+}
+@media screen and (min-device-width: 241px) and (max-device-width: 360px) {
+  .body { 
+    font-size: 14px;
+  }
+}
+@media screen and (min-device-width: 361px) and (max-device-width: 480px) {
+  .body {
+    font-size: 14px;
+  }
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 600px) {
+  .body {
+    font-size: 16px;
+  }
+}
+@media screen and (min-device-width: 601px) and (max-device-width: 800px) {
+  .body {
+    font-size: 18px;
+  }
+}
+@media screen and (min-device-width: 801px) {
+  .body {
+    font-size: 18px;
+  }
+}

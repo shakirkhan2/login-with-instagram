@@ -3,10 +3,10 @@ Login with Instagram and categorize your images in several categories ex: smile,
 
 
 ### Prerequisites
-
-PHP 5.3 or higher__
-cURL__
-Registered Instagram App
+* PHP 5.3 or higher
+* cURL
+* Registered Instagram App
+* Registered Google Cloud Vision Project
 
 
 ## Getting Started

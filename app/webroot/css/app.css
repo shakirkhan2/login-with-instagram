@@ -7,7 +7,6 @@
 }
 .container {
   width: 100%;
-  height: 100vh;
 }
 .header {
   height: 52px;
@@ -86,10 +85,11 @@
   margin-right: 50px;
 }
 .content {
-  margin: 80px auto 0;
+  margin: 48px auto 0;
   width: 1180px;
-  height: 100%;
   position: relative;
+  padding-top: 32px;
+  height: 90vh;
 }
 .all-categories {
   width: 200px;

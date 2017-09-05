@@ -44,12 +44,31 @@ class HomeController extends AppController {
       
       $instagram = $this->getInstagramInstance();
       $instagram->setAccessToken((object) $userInfo);
-      $userMedia = $instagram->getUserMedia($id = 'self', $limit = 50);
+      $userMedia = $instagram->getUserMedia($id = 'self', $limit = 30);
       $images = $this->getImages($userMedia);
 
       $vision = new CloudVision();
-      $result = $vision->detectLabelsBatch($images);
-      $imagesData = $this->prepareImagesData($images, $result);
+      $imagesChunks = array_chunk($images, 10);
+      $preparedChunkData = array();
+
+      foreach ($imagesChunks as $imagesChunk) {
+        $result = $vision->detectLabelsBatch($imagesChunk);
+        $preparedChunkData[] = $this->prepareImagesData($imagesChunk, $result);
+      }
+
+      $imagesData = array(
+        'categories' => array(),
+        'images' => array()
+      );
+
+      $categories = array();
+      foreach ($preparedChunkData as $key => $preparedData) {
+        $imagesData['categories'] = array_merge($imagesData['categories'], $preparedData['categories']);
+        $imagesData['images'] = array_merge($imagesData['images'], $preparedData['images']);
+      }
+      
+      $imagesData['categories'] = array_unique($imagesData['categories']);
+      sort($imagesData['categories']);
       $this->set('imagesData', $imagesData);
 
       $ajaxResultView = new View($this);
